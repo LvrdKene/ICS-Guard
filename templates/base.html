@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}ICS-Guard{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+  <style>.btn#train-live-model{border-color:#3ecf8e;color:#3ecf8e;background:rgba(62,207,142,.08)}.model-status{display:inline-flex;align-items:center;gap:7px;color:#3ecf8e;font:600 10px var(--mono);letter-spacing:.12em}.model-status-light{width:8px;height:8px;border-radius:50%;background:#3ecf8e;box-shadow:0 0 12px rgba(62,207,142,.9)}.model-status-row{grid-template-columns:repeat(2,minmax(0,1fr))}.log-filters{padding:14px;background:rgba(13,18,16,.72);border:1px solid var(--line);border-radius:10px;grid-template-columns:repeat(6,minmax(0,1fr));align-items:end}.filter-group input,.filter-group select{min-height:34px;border-radius:8px;transition:border-color .2s,box-shadow .2s}.filter-group input:focus,.filter-group select:focus,.report-filter input:focus,.report-filter select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(79,179,169,.12)}.report-filters{display:grid;grid-template-columns:1.1fr 1fr 1fr 1.8fr auto;gap:10px;align-items:end}.report-filter{display:flex;flex-direction:column;gap:6px}.report-filter label{font:10px var(--mono);color:var(--text-dim);letter-spacing:.08em;text-transform:uppercase}.report-filter input,.report-filter select{width:100%;min-height:34px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel-2);color:var(--text);font:11px var(--mono)}.report-download{white-space:nowrap}.report-exports{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.btn:disabled{opacity:.48;cursor:not-allowed}.action-status{min-height:18px;font-family:var(--mono);line-height:1.5}.rvalue{color:#3ecf8e}a.btn{display:inline-block;text-decoration:none}@media (max-width:900px){.log-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filter-group-search{grid-column:span 2}.report-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.report-filter-search{grid-column:span 2}.report-download{width:100%;text-align:center}}</style>
+</head>
+<body>{% block content %}{% endblock %}<script src="{{ url_for('static', filename='js/app.js') }}?v=7"></script></body>
+</html>
