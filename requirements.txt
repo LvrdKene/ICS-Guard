@@ -1,7 +1,7 @@
 # Recommended Python version: 3.11.x
-# Python 3.13 is not recommended for this project because SHAP may fall back to a source build on Windows.
+
 Flask==3.1.0
-# Imported directly for password hashing, upload handling, and HTTP errors.
+
 Werkzeug==3.1.3
 joblib==1.4.2
 lightgbm>=4.0,<5.0
